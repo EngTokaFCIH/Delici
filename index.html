@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Dine Out, restaurant, about us, menu, online food ordering
+        Salads, gourmet burgers, artisan pizza, crispy French fries, fried chicken
+        Tacos, refreshing drinks, beverages, fast food, dine-in, takeout">
+    <meta name="description" content="Welcome to Dine Out, your ultimate destination for delicious food and great vibes.
+        Explore our diverse menu featuring fresh salads, juicy burgers, artisan pizzas, and crispy fries.
+        Savor our mouthwatering fried chicken, flavorful tacos, and refreshing drinks tailored for every craving.
+        Join us today for an unforgettable dining experience, whether you are eating in or ordering to go!">
+    <title>Nike</title>
+    <link rel="stylesheet" href="CSS/all.css">
+    <!-- <link class="icon" rel="icon" href="images_Nike/images/first-logo.png"> -->
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/fonts.css">
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/animation.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+</head>
+
+<body class="position-relative">
+    <!-- ===================================PROGRESS BAR======================== -->
+
+    <div class="progress-bar"></div>
+
+    <!-- ===================================NAV BAR======================== -->
+
+    <nav class="nav position-fixed">
+        <div class="container d-flex align-items-center justify-content-between column-gap-3">
+            <a href="#" class="nav-brand">
+                <img src="images/logo-C0Gifmml.png" class="img-fluid" alt="nav-brand">
+            </a>
+            <ul
+                class="links list-unstyled d-none d-lg-flex align-items-center justify-content-center column-gap-3 mb-0">
+                <li class="item">
+                    <a class="link text-decoration-none active" href="#Home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link text-decoration-none" href="#About-Us">About Us</a>
+                </li>
+                <li class="item">
+                    <a class="link text-decoration-none" href="#Our-Story">Our Story</a>
+                </li>
+                <li class="item">
+                    <a class="link text-decoration-none" href="#Special-Dish">Special Dish</a>
+                </li>
+                <li class="item">
+                    <a class="link text-decoration-none" href="#Menu">Menu</a>
+                </li>
+                <li class="item">
+                    <a class="link text-decoration-none" href="#Our-Chefs">Our Chefs</a>
+                </li>
+                <li class="item">
+                    <a class="link text-decoration-none" href="#Contact-Us">Contact Us</a>
+                </li>
+            </ul>
+            <button class="btn burger d-flex flex-column align-items-start justify-content-center row-gap-1"
+                onclick="openPopup('side-nav')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    <!-- ===================================CAROUSEL HEADER======================== -->
+
+    <Header class="vh-100" id="Home">
+        <div class="SC-carousel position-relative vh-100">
+            <div class="SC-carousel-inner position-relative h-100">
+                <!-- <div class="layout"></div> -->
+                <div class="SC-carousel-item active h-100 position-absolute w-100 top-0 left-0" data-name="1">
+                    <div
+                        class="container h-100 text-light d-flex justify-content-center align-items-center flex-column">
+                        <div class="title mb-3 text-center">
+                            <h6>DELIGHTFUL EXPERIENCE</h6>
+                            <div class="title-img m-auto">
+                                <img src="images/separator.svg" class="img-fluid" alt="title image">
+                            </div>
+                        </div>
+                        <div class="content d-flex flex-column align-items-center justify-content-center">
+                            <h2 class="display-1">Flavors Inspired By</h2>
+                            <h2 class="display-1 mb-3">The Seasons</h2>
+                            <p class="mb-5 fs-5">Come with family & feel the joy of mouthwatering food</p>
+                            <button class="rounded-2"><span>VIEW OUR MENU</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="SC-carousel-item h-100 position-absolute w-100 top-0 left-0" data-name="2">
+                    <div
+                        class="container h-100 text-light d-flex justify-content-center align-items-center flex-column">
+                        <div class="title mb-3 text-center">
+                            <h6>AMAZING & DELICIOUS</h6>
+                            <div class="title-img m-auto">
+                                <img src="images/separator.svg" class="img-fluid" alt="title image">
+                            </div>
+                        </div>
+                        <div class="content d-flex flex-column align-items-center justify-content-center">
+                            <h2 class="display-1">Where Every Flavor</h2>
+                            <h2 class="display-1 mb-3">Tells A Story</h2>
+                            <p class="mb-5 fs-5">Come with family & feel the joy of mouthwatering food</p>
+                            <button class="rounded-2"><span>VIEW OUR MENU</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="SC-carousel-item h-100 position-absolute w-100 top-0 left-0" data-name="3">
+                    <div
+                        class="container h-100 text-light d-flex justify-content-center d-flex flex-column align-items-center justify-content-center-center align-items-center flex-column">
+                        <div class="title mb-3 text-center">
+                            <h6>TRADATIONAL & HYGINE</h6>
+                            <div class="title-img m-auto">
+                                <img src="images/separator.svg" class="img-fluid" alt="title image">
+                            </div>
+                        </div>
+                        <div class="content d-flex flex-column align-items-center justify-content-center">
+                            <h2 class="display-1">For The Love Of</h2>
+                            <h2 class="display-1 mb-3">Delicious Food</h2>
+                            <p class="mb-5 fs-5">Come with family & feel the joy of mouthwatering food</p>
+                            <button class="rounded-2"><span>VIEW OUR MENU</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ===================================Next & Prev======================== -->
+            <button class="position-absolute prev"><i class="fa-solid fa-angle-left"></i></button>
+            <button class="position-absolute next"><i class="fa-solid fa-angle-right"></i></button>
+            <!-- ===================================Book A Table======================== -->
+            <div class="head-book position-absolute">
+                <div class="book-img">
+                    <img src="images/book-icon-1.png" class="img-fluid" alt="Booking">
+                </div>
+                <h6>BOOK A
+                    <br>
+                    TABLE
+                </h6>
+            </div>
+            <!-- ===================================Indicators======================== -->
+            <div class="indicators">
+                <span class="active" id="1" onclick="changeIndicator(this); cameraShutter()"></span>
+                <span id="2" onclick="changeIndicator(this); cameraShutter()"></span>
+                <span id="3" onclick="changeIndicator(this); cameraShutter()"></span>
+            </div>
+
+
+        </div>
+    </Header>
+
+    <!-- ===================================POPUP NAV======================== -->
+
+    <div class="popup position-fixed" data-name="side-nav" onclick="closePopup()">
+        <div class="box">
+            <div class="container">
+                <div class="head">
+                    <i class="exit fa-regular fa-circle-xmark" onclick="closePopup()"></i>
+                    <img src="images/logo-C0Gifmml.png" alt="logo nav-side">
+                </div>
+                <div class="drinks rounded-circle overflow-hidden">
+                    <img src="images/sidebar-image.jpg" class="img-fluid" alt="drinks side-bar">
+                </div>
+                <ul class="links list-unstyled w-50 d-flex align-items-start justify-content-center flex-column">
+                    <li class="item">
+                        <a class="link active text-decoration-none" href="#Home">Home</a>
+                    </li>
+                    <li class="item">
+                        <a class="link text-decoration-none" href="#About-Us">About Us</a>
+                    </li>
+                    <li class="item">
+                        <a class="link text-decoration-none" href="#Our-Story">Our Story</a>
+                    </li>
+                    <li class="item">
+                        <a class="link text-decoration-none" href="#Special-Dish">Special Dish</a>
+                    </li>
+                    <li class="item">
+                        <a class="link text-decoration-none" href="#Menu">Menu</a>
+                    </li>
+                    <li class="item">
+                        <a class="link text-decoration-none" href="#Our-Chefs">Our Chefs</a>
+                    </li>
+                    <li class="item">
+                        <a class="link text-decoration-none" href="#Contact-Us">Contact Us</a>
+                    </li>
+                </ul>
+                <p class="visit display-5">Visit Us</p>
+                <p class="details"><i class="fa-solid fa-location-dot"></i> Delicious City, London 9578, UK</p>
+                <p class="details"><i class="fa-regular fa-clock"></i> Daily : 8.00 am to 10.00 pm</p>
+                <p class="details mb-0"><i class="fa-regular fa-envelope"></i> booking@restaurant.com</p>
+                <div class="square"></div>
+                <h5>Booking Request</h5>
+                <p><a href="tel:+20-102-108-0042" class="text-decoration-none telephone">+20-102-108-0042</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================================ABOUT US======================== -->
+
+    <section id="About-Us" class="">
+        <div class="container py-5  text-center d-flex flex-column align-items-center justify-content-center">
+            <div class="title mb-3 text-center">
+                <h6>FLAVORS FOR ROYALTY</h6>
+                <div class="title-img m-auto">
+                    <img src="images/separator.svg" class="img-fluid" alt="title image">
+                </div>
+            </div>
+            <h2 class="display-5 text-light my-3">We Offer Top Notch</h2>
+            <p class="text-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum
+                has been the industrys standard dummy text ever.</p>
+            <div class="content">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="item">
+                            <div class="images">
+                                <img src="images/pattern-8.svg" alt="bg-pattern" class="img-fluid">
+                                <img src="images/offer-image-1.jpg" alt="breakfast" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="item">
+                            <div class="images">
+                                <img src="images/pattern-8.svg" alt="bg-pattern" class="img-fluid">
+                                <img src="images/offer-image-2.jpg" alt="dinner" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="item">
+                            <div class="images">
+                                <img src="images/pattern-8.svg" alt="bg-pattern" class="img-fluid">
+                                <img src="images/offer-image-3.jpg" alt="drinks" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

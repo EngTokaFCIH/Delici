@@ -1,0 +1,581 @@
+.progress-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+    width: 0%;
+    height: 6px;
+    border-radius: 10px;
+    /* *as if more than one ele have the same z-index we will depend on html structure not on z-index*/
+    z-index: 1001;
+}
+
+nav.nav{
+    top:0px;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 20px 0px ;
+    transition: transform 0.5s ease;
+}
+
+nav.nav.scrolled{
+    background-color: var(--bg-color-nav);
+}
+
+nav.nav.hide{
+    transform: translateY(-100%);
+}
+
+nav.nav .nav-brand{
+    width: 13%;
+}
+
+nav.nav .links .item a.link{
+    color: #fff;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+nav.nav .links .item a.link.active{
+    color: var(--main-color);
+}
+
+nav.nav .links .item a.link::after{
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    display: block;
+    width: 0%;
+    height: 5px;
+    border: 0px solid transparent;
+    border-top-color: var(--main-color);
+    border-bottom-color: var(--main-color);
+    background-color: transparent;
+    transition-duration: 0.5s;
+}
+
+nav.nav .links .item a.link.active::after,
+nav.nav .links .item a.link:hover::after{
+    left: 0%;
+    width: 100%;
+    border: 1px solid transparent;
+    border-top-color: var(--main-color);
+    border-bottom-color: var(--main-color);
+}
+
+nav.nav .burger{
+    width: 35px;
+}
+
+nav.nav .burger span{
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: burger-move;
+    animation-timing-function: linear;
+    animation-duration: 0.4s;
+}
+
+nav.nav .burger span:nth-of-type(2){
+    animation-delay: 0.4s;
+}
+
+nav.nav .burger span:nth-of-type(3){
+    animation-delay: 0.6s;
+}
+
+
+body{
+    height: 6000px;
+    overflow-y: scroll;
+}
+
+
+.popup{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(227, 197, 144, 0.5);
+    z-index: 1500;
+    display: none;
+    opacity: 0;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.popup.active{
+    display: flex;
+    transition-duration: 0.5s;
+}
+
+.popup.show{
+    opacity: 1;
+
+}
+
+.popup .box{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 400px;
+    min-height: 100dvh;
+    display: block;
+    background: var(--bg-color2) url("./../images/bg-nav.png");
+    background-position: center;
+    background-repeat: repeat;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    transition-duration: 0.8s;
+}
+
+.popup.show .box{
+    left: 0%;
+}
+
+.popup .box::-webkit-scrollbar{
+    display: none;
+}
+
+.popup .box .container{
+    margin: 35px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.popup .box .container .exit{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 18px;
+    color: var(--main-color);
+}
+
+.popup .box .container .drinks{
+    width: 40%;
+    margin: 30px auto;
+}
+
+.popup .box .container .links .item{
+    width: 100%;
+    border: 1px solid transparent;
+    border-top-color: var(--gray-color);
+    border-bottom-color: var(--gray-color);
+    padding: 10px 0px;
+}
+
+.popup .box .container .links .item a{
+    color: #ffffff;
+    transition-duration: 0.7s;
+}
+
+.popup .box .container .links .item a:hover{
+    color: var(--main-color);
+}
+
+.popup .box .container .links .item a.active{
+    color: var(--main-color);
+    position: relative;
+    margin-left: 18px;
+}
+
+.popup .box .container .links .item a.active::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: -18px;
+    top: 5px;
+    border: 2px solid var(--main-color);
+    animation-name: square-rotate;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.popup .box .container .visit{
+    color: #ffffff;
+}
+
+.popup .box .container .details{
+    color: var(--gray-color);
+}
+
+.popup .box .container .square{
+    margin: 20px auto;
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--main-color);
+    animation-name: square-rotate;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.popup .box .container h5{
+    color: #ffffff;
+}
+
+.popup .box .container .telephone{
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Header .SC-carousel-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+Header .SC-carousel-inner.layout-animation::before{
+    content: "";
+    display: block;
+    position: relative;
+    background-color: var(--gray-color);
+    z-index: 4;
+    animation-name: slide-layout;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.3s;
+}
+
+Header .SC-carousel-item{
+    transition-duration: 0.5s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+Header .SC-carousel-item:nth-of-type(1){
+    background-image: url('./../images/slider-1.jpg');
+}
+
+Header .SC-carousel-item:nth-of-type(2){
+    background-image: url('./../images/slider-2.jpg');
+}
+
+Header .SC-carousel-item:nth-of-type(3){
+    background-image: url('./../images/slider-3.jpg');
+}
+
+Header .SC-carousel-item .title h6{
+    color: var(--main-color);
+}
+
+Header .SC-carousel-item .title .title-img{
+    width: 60%;
+}
+
+Header .SC-carousel-item button{
+    background-color: transparent;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    letter-spacing: 2px;
+    padding-inline: 30px;
+    padding-block: 10px;
+    position: relative;
+    z-index: 2;
+    transform: translateY(100px);
+    opacity: 0;
+    overflow: hidden;
+}
+
+
+Header .SC-carousel-item button span{
+    position: relative;
+    z-index: 2;
+    transition-duration: 1s;
+}
+
+Header .SC-carousel-item button:hover span{
+    color: black;
+}
+
+Header .SC-carousel-item button::after,
+Header .SC-carousel-item button::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 0;
+    transition-duration: 1s;
+}
+
+Header .SC-carousel-item button::after{
+    top: 100%;
+}
+
+Header .SC-carousel-item button::before{
+    top: -100%;
+}
+
+Header .SC-carousel-item button:hover::after,
+Header .SC-carousel-item button:hover::before{
+    top: 0%;
+    color: black;
+}
+
+Header .SC-carousel-item .title{
+    transform: translateY(70px);
+    transition-duration: 1s;
+    opacity: 0;
+}
+
+Header .SC-carousel-item h2{
+    transform: translateY(80px);
+    transition-duration: 1s;
+    opacity: 0;
+    transition-delay: 0.3s;
+}
+
+Header .SC-carousel-item p{
+    transform: translateY(90px);
+    transition-duration: 1s;
+    opacity: 0;
+    transition-delay: 0.5s;
+}
+
+Header .SC-carousel-item.active{
+    z-index: 2;
+}
+
+Header .SC-carousel-item.active .title{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+Header .SC-carousel-item.active h2{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+Header .SC-carousel-item.active p{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+Header .SC-carousel-item.active button{
+    transition-duration: 0.9s;
+    transition-delay: 0.7s;
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+Header .SC-carousel .next,
+Header .SC-carousel .prev{
+    border: 1px solid var(--main-color);
+    padding: 10px 10px;
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+    z-index: 2;
+    transition-duration: 0.5s ;
+}
+
+Header .SC-carousel .prev{
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    left: 50px;
+}
+
+Header .SC-carousel .next{
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    right: 50px;
+}
+
+Header .SC-carousel .next i{
+        transform: rotate(312deg)
+}
+
+Header .SC-carousel .prev i{
+    transform: rotate(323deg);
+}
+
+Header .SC-carousel .prev:hover,
+Header .SC-carousel .next:hover{
+    background-color: var(--main-color);
+    color: black;
+}
+
+Header .SC-carousel .head-book{
+    cursor: pointer;
+    bottom: 50px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    z-index: 2;
+    padding: 15px 15px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+Header .SC-carousel .head-book .book-img{
+    width: 60%;
+    margin-bottom: 13px;
+}
+
+Header .SC-carousel .head-book h6{
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+Header .SC-carousel .head-book::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    border: 1px solid var(--main-color);
+    animation-name: rotate-book-img;
+    animation-timing-function: linear;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+Header .SC-carousel .indicators{
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+Header .SC-carousel .indicators span{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+Header .SC-carousel .indicators{
+    width: 150px;
+}
+
+Header .SC-carousel .indicators span{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    width: 10px;
+    transition: width 0.1s linear;
+}
+
+Header .SC-carousel .indicators span.active{
+    perspective: 600px;
+    /* animation-name: identifier;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards; */
+    /* transform-origin: right center; */
+    border-radius: 10px;
+    width: 70px;
+    height: 10px;
+}
+
+Header .SC-carousel .indicators span.active::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation-name: indicatorTimer;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+Header:hover .SC-carousel .indicators span.active::before{
+    animation-play-state: paused;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+
+#About-Us{
+    background-color: var(--bg-color2);
+    background-image: url('../images/bg-1.png'), url('../images/bg-2.png') ,url('./../images/bg-nav.png');
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-position: 100% 0px, 0% 97%  , center center;
+    animation-name: about-animation;
+    animation-timing-function: linear;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#About-Us .title h6{
+    color: var(--main-color);
+}
+
+#About-Us .title .title-img{
+    width: 80%;
+}
+
+#About-Us .container p{
+    width: 35%;
+}
+
+#About-Us .container .content .item .images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+}
+
+#About-Us .container .content .item .images img:nth-of-type(1){
+    max-width: 150px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#About-Us .container .content .item .images img:nth-of-type(2){
+    /* position: relative; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
