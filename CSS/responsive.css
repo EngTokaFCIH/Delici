@@ -1,0 +1,267 @@
+@media (max-width: 1300px) {
+    Header .SC-carousel-item h2 {
+        font-size: 30px;
+    }
+
+    Header .SC-carousel-item p {
+        font-size: 12px;
+    }
+
+    Header .SC-carousel-item button {
+        padding-inline: 15px;
+        padding-block: 8px;
+    }
+
+    Header .SC-carousel .head-book {
+        left: 30px;
+        width: 80px;
+        height: 80px;
+        bottom: 30px;
+    }
+
+    Header .SC-carousel .head-book h6 {
+        font-size: 9px;
+    }
+
+    nav.nav .nav-brand {
+        width: 30%;
+    }
+
+    nav.nav .burger {
+        width: 20px;
+        margin-right: 20px;
+    }
+
+    .popup.popup[data-name='side-nav'] .box {
+        width: 85%;
+    }
+
+    .popup.popup[data-name='side-nav'] .box .container .drinks {
+        width: 55%;
+    }
+
+    .popup.popup[data-name='side-nav'] .box .container .links {
+        width: 70%;
+    }
+
+    .popup.popup[data-name='side-nav'] .box .container .telephone {
+        font-size: 20px;
+    }
+
+    #About-Us .title h6 {
+        font-size: 14px;
+        letter-spacing: 0.5px;
+    }
+
+    #About-Us .container p {
+        width: 100%;
+        margin-bottom: 8rem;
+    }
+
+    #About-Us .container .content .box :nth-of-type(1) {
+        transform: translate(0%, 0%);
+        max-width: 280px;
+        margin: auto;
+    }
+
+    #About-Us .container .content .box:nth-of-type(2) {
+        transform: translate(0%, -10%);
+        max-width: 280px;
+        margin: auto;
+    }
+
+    #About-Us .container .content .box:nth-of-type(3) {
+        transform: translate(0%, 9%);
+        max-width: 280px;
+        margin: auto;
+    }
+
+    #About-Us .container .content .box .info {
+        margin-bottom: 0px;
+    }
+
+    #Our-Story .box-1 .item .title h6{
+        font-size: 15px;
+}
+
+    #Our-Story .box-1 .item p{
+        width: 95%;
+        font-size: 14px;
+}
+
+    #Our-Story .box-2 .item{
+        width: 80%;
+        margin: auto;
+
+}
+
+    #Our-Story .box-2 .item .top{
+            width: 40%;
+    }
+
+    #Our-Story .box-2 .item .bottom{
+        width: 51%;
+}
+
+    #Our-Story .box-2 .item .bottom img:nth-of-type(1) {
+    width: 61px;
+
+}
+
+    #Special-Dish .box-1{
+        width: 100%;
+        height: 300px;
+    }
+
+    #Special-Dish .box-2 .content p{
+        width: 100%;
+        font-size: 13px;
+        line-height: 25px;
+    }
+
+    #Special-Dish .box-2 .content button {
+    padding: 8px 7px;
+}
+
+    #Menu .container .links .boxes{
+        width: max-content;
+    }
+
+    #Menu .container .pane.move [class*='part'] .item .box .row .col-lg-2{
+        width: fit-content;
+    }
+
+    #Menu .container .pane.move [class*='part'] .item .box .row .col-lg-10{
+        width: 70%;
+    }
+
+    #Menu .container .search{
+        width: 73%;
+    }
+
+}
+
+@media (min-width: 371px) and (max-width: 1300px) {
+    Header .SC-carousel-item .title h6 {
+        font-size: 16px;
+    }
+
+    Header .SC-carousel-item h2 {
+        font-size: 40px;
+    }
+
+    Header .SC-carousel-item p {
+        font-size: 15px;
+    }
+
+    .popup.popup[data-name='side-nav'] .box .container .drinks {
+        width: 45%;
+    }
+
+    .popup.popup[data-name='side-nav'] .box .container .links {
+        width: 60%;
+    }
+
+    .popup.popup[data-name='side-nav'] .box .container .telephone {
+        font-size: 30px;
+    }
+
+    #About-Us .container p {
+        width: 80%;
+    }
+
+    #Menu .container .links .boxes{
+        width: max-content;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1300px) {
+    Header .SC-carousel-item h2 {
+        font-size: 45px;
+    }
+
+    .popup.popup[data-name='side-nav'] .box {
+        width: 55%;
+    }
+
+    #Our-Story .box-2 .item .bottom img:nth-of-type(1) {
+        width: 90px;}
+
+    #Special-Dish .box-1{
+        height: 450px;
+    }
+
+     #Menu .container .links .boxes{
+        width: max-content;
+    }
+    }
+
+@media (min-width: 769px) and (max-width: 1300px) {
+    Header .SC-carousel-item h2 {
+        font-size: 45px;
+    }
+
+    .popup.popup[data-name='side-nav'] .box {
+        width: 35%;
+    }
+
+    #About-Us .container .content .box:nth-of-type(3) {
+        transform: translate(0%, -10%);
+    }
+
+    #Our-Story .box-2 .item{
+        width: 60%;
+
+}
+
+    #Our-Story .box-1 .item p{
+        width: 100%;
+}
+
+    #Our-Story .box-2 .item .bottom img:nth-of-type(1) {
+    width: 90px;
+
+}
+
+    #Our-Story .box-2{
+        
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    }
+
+    #Our-Story .box-2 .item{
+        width: 82%
+    }
+
+    #Special-Dish .box-1{
+        width: 50%;
+        height: 560px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+    nav.nav .nav-brand {
+        width: 13%;
+    }
+
+    #About-Us .container p {
+        width: 40%;
+        margin-bottom: 0px;
+    }
+
+    #About-Us .container .content .box:nth-of-type(1) {
+        transform: translate(-14%, -29%);
+    }
+
+    #About-Us .container .content .box:nth-of-type(2) {
+        transform: translate(4%, 0%);
+    }
+
+    #About-Us .container .content .box:nth-of-type(3) {
+        transform: translate(17%, -29%);
+    }
+}
+
+@media (min-width: 1181px) and (max-width: 1300px) {}

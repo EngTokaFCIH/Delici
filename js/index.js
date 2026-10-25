@@ -10,16 +10,32 @@ let progressBar = document.querySelector('.progress-bar'),
     layout = document.querySelector(".SC-carousel-inner"),
     slidesArr = Array.from(document.querySelectorAll(".SC-carousel-item")),
     currentSlide = document.querySelector(".SC-carousel-item.active"),
-    indicators = document.querySelectorAll('.indicators span');
+    indicators = document.querySelectorAll('.indicators span'),
+    registerForm = document.querySelectorAll("form"),
+    // registerInputs = registerForm.querySelectorAll("input"),
+    regexInputs = {
+        'name': /^(([A-Za-z]{3,})|([A-Za-z]{2}\-[A-Za-z]{3,}))$/,
+        'reservationName': /^(([A-Za-z]{3,})|([A-Za-z]{2}\-[A-Za-z]{3,}))$/,
+        'email': /^[A-Za-z_]?[A-Za-z_\.]+[0-9]{0,}@(gmail|yahoo)\.(com|org)$/,
+        'phone': /^(((02)?01(0|1|2|5)[0-9]{8})|(02)[0-9]{8})$/,
+        'seats': /^[1-9]{1,2}$/,
+        'date': /^\d{4}-\d{2}-\d{2}T([01]\d|2[0-3]):[0-5]\d$/
+    },
+    resetIcon = document.querySelector('i[data-name="reset"]'),
+    loadingPage = document.querySelector('.loadingPage'),
+    searchInput = document.querySelector('#Menu .search-input'),
+    currentMenu = BreakFast;
+
+searchInput.addEventListener('input' , search);
 
 let cameraSound = new Audio("Music/irinairinafomicheva-camera-13695.mp3"),
-isAuto = false;
+    isAuto = false;
 
 let popupBoxes = document.querySelectorAll(".popup .box");
 
 checkScrolledNav();
 
-sections.forEach(function(section){
+sections.forEach(function (section) {
     updateNavLink(section.id);
     updatePopUpLink(section.id);
 })
@@ -49,7 +65,7 @@ nextSlide.addEventListener('click', function () {
 
         changeIndicator(nextIndicator);
 
-        if(!isAuto){
+        if (!isAuto) {
             cameraShutter();
         };
         isAuto = false;
@@ -77,7 +93,7 @@ prevSlide.addEventListener('click', function () {
 
         changeIndicator(nextIndicator);
 
-        if(!isAuto){
+        if (!isAuto) {
             cameraShutter();
         };
         isAuto = false;
@@ -139,40 +155,40 @@ popupBoxes.forEach(function (box) {
     })
 })
 
-window.addEventListener('scroll', function(){
+window.addEventListener('scroll', function () {
     checkScrolledNav();
-    
+
     let currentScroll = window.scrollY;
     // 2000 - 500 the height of my project - height of my laptop screen 
     maxHeight = document.documentElement.scrollHeight - window.innerHeight;
 
-    if(currentScroll > prevScroll){
+    if (currentScroll > prevScroll) {
         navEle.classList.add('hide');
-    }else if(prevScroll > currentScroll){
+    } else if (prevScroll > currentScroll) {
         navEle.classList.remove('hide');
     }
 
-    prevScroll  = currentScroll;
-    
+    prevScroll = currentScroll;
+
     let progress = maxHeight > 0 ? (currentScroll / maxHeight) * 100 : 0;
-    
+
     progressBar.style.width = `${progress}%`
-    
-    sections.forEach(function(section){
+
+    sections.forEach(function (section) {
         updateNavLink(section.id);
         updatePopUpLink(section.id);
     })
 });
 
-navLinks.forEach(function(navLink){
-    navLink.addEventListener('click', function(e){
+navLinks.forEach(function (navLink) {
+    navLink.addEventListener('click', function (e) {
         e.preventDefault();
-        
+
         let currentNavLink = navEle.querySelector('.link.active'),
-        newId = navLink.getAttribute('href'),
-        // we did not delete # from id as #About-Us means select element that have id About-Us (# in css means id , . means class)
-        newSection = document.querySelector(newId),
-        topOfSection = newSection.offsetTop + navEle.clientHeight - 5*16;
+            newId = navLink.getAttribute('href'),
+            // we did not delete # from id as #About-Us means select element that have id About-Us (# in css means id , . means class)
+            newSection = document.querySelector(newId),
+            topOfSection = newSection.offsetTop + navEle.clientHeight - 5 * 16;
 
         currentNavLink.classList.remove('active');
         navLink.classList.add('active');
@@ -180,21 +196,20 @@ navLinks.forEach(function(navLink){
         window.scrollTo({
             top: topOfSection,
             left: 0,
-
+            
         })
-
     })
 })
 
-popUpNavLinks.forEach(function(navLink){
-    navLink.addEventListener('click', function(e){
+popUpNavLinks.forEach(function (navLink) {
+    navLink.addEventListener('click', function (e) {
         e.preventDefault();
-        
+
         let currentNavLink = popUpNav.querySelector('.link.active'),
-        newId = navLink.getAttribute('href'),
-        // we did not delete # from id as #About-Us means select element that have id About-Us (# in css means id , . means class)
-        newSection = document.querySelector(newId),
-        topOfSection = newSection.offsetTop;
+            newId = navLink.getAttribute('href'),
+            // we did not delete # from id as #About-Us means select element that have id About-Us (# in css means id , . means class)
+            newSection = document.querySelector(newId),
+            topOfSection = newSection.offsetTop;
 
         currentNavLink.classList.remove('active');
         navLink.classList.add('active');
@@ -208,7 +223,23 @@ popUpNavLinks.forEach(function(navLink){
     })
 })
 
+showMenu(BreakFast);
 
+// window.onload = function(){
+//     loadingPage.classList.add('fixed');
+//     setTimeout(function(){
+//         loadingPage.classList.add('show');
+//     },0)
+
+//     let body = document.querySelector('body');
+
+//     setTimeout(function(){
+//         loadingPage.classList.remove('show');
+//         loadingPage.classList.add('d-none')
+//         body.classList.add('scroll')
+//         loadingPage.classList.remove('fixed');
+//     },4000) 
+// }
 
 
 

@@ -8,7 +8,7 @@
     }
 }
 
-@keyframes square-rotate {
+@keyframes square-circle-rotate {
     0%{
         transform: rotate(0deg);
     }
@@ -56,5 +56,43 @@
 @keyframes about-animation {
     to{
         background-position: 100% 15px, 0% 105%  , center center;
+    }
+}
+
+@keyframes rotate-our-story {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes special-dish-beside-title {
+    From{
+        top: 17%;
+    }
+
+    to{
+        top: 23%;
+    }
+}
+
+@keyframes letter-rotate {
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+    }
+
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes menu-animation{
+    0%{
+        background-position: 0% 0px, 98% 99%;
+    }
+
+    100%{
+        background-position: 0% 27px, 98% 106%;
     }
 }
