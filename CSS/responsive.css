@@ -123,6 +123,10 @@
     padding: 8px 7px;
 }
 
+    #Menu .container .links .overflow{
+        overflow-x: auto;
+    }
+
     #Menu .container .links .boxes{
         width: max-content;
     }
@@ -135,8 +139,110 @@
         width: 70%;
     }
 
-    #Menu .container .search{
-        width: 73%;
+    #Menu .container .pane [class*='part'] .item .box .headline{
+        align-items: start;
+    }
+
+    #Menu .container .pane [class*='part'] .item .box .headline .name{
+        font-size: 19px;
+    }
+
+    #Menu .container .pane [class*='part'] .item .box .description p{
+        width: 100%;
+        font-size: 13px;
+}
+
+    #Menu .container .search {
+        padding: 10px 17px;
+        width: 83%;
+}
+
+#Menu .container .line-in-middle{
+    display: none;
+}
+
+#noResult .empty-menu {
+    width: 35%;
+}
+
+#noResult p {
+    width: 85%;
+}
+
+.popup[data-name="menu"] .box {
+    width: 300px;
+    height: 134%;
+}
+
+.popup[data-name="menu"] .box .image-menu-popup {
+    width: 108%;
+}
+
+.popup[data-name="menu"] .box button.menu-next {
+    right: 10px;
+}
+
+.popup[data-name="menu"] .box button.menu-prev {
+    left: 10px;
+}
+
+.popup[data-name="menu"] .box button {
+    width: 30px;
+    height: 30px;
+}
+
+.popup[data-name="menu"] .box p {
+    width: 100%;
+    margin-top: 0px;
+}
+
+.popup[data-name="menu"] .box .price {
+    top: 17%;
+}
+
+#Contact-Us .container {
+    width: 95%;
+}
+
+#Our-Chefs .container .item{
+    max-width: 280px;
+    margin: auto;
+}
+
+#Contact-Us form .input{
+    width: 80%;
+}
+
+#Contact-Us form .input .box{
+    width: 100%;
+}
+
+    .popup[data-name='book-table'] >.box {
+        width: 90%;
+    min-height: 165%;
+}
+
+.popup[data-name='book-table'] .box .body p{
+    width: 90%;
+    text-align: center;
+}
+
+.loadingPage .empty p{
+    font-size: 60px;
+}
+
+.loadingPage .text p{
+    font-size: 60px;
+}
+
+.loadingPage .circle{
+    width: 84px;
+    height: 84px;
+}
+
+.loadingPage .text {
+        top: 48.2%;
+        left: 14.2%;
     }
 
 }
@@ -173,6 +279,33 @@
     #Menu .container .links .boxes{
         width: max-content;
     }
+
+    #Menu .container .search {
+        width: 62%;
+    }
+
+    #Contact-Us form .input{
+    width: 65%;
+}
+
+    #Contact-Us form textarea{
+    width: 65%;
+}
+
+    .popup[data-name='book-table'] >.box {
+        width: 90%;
+    min-height: 152%;
+}
+
+.popup[data-name='book-table'] .box .body p{
+    width: 75%;
+    text-align: center;
+}
+
+    .loadingPage .text {
+        top: 48.2%;
+        left: 22.2%;
+    }
 }
 
 @media (min-width: 577px) and (max-width: 1300px) {
@@ -194,6 +327,40 @@
      #Menu .container .links .boxes{
         width: max-content;
     }
+
+    #Menu .container .pane [class*='part'] .item .box .headline {
+        align-items: center;
+    }
+
+    #Menu .container .pane [class*='part'] .item .box .description p {
+        width: 84%;
+        font-size: 15px;
+    }
+
+    .popup[data-name="menu"] .box {
+        width: 500px;
+        height: 114%;
+    }
+
+    .popup[data-name="menu"] .box .image-menu-popup {
+        width: 96%;
+    }
+
+    .popup[data-name="menu"] .box p {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .popup[data-name='book-table'] >.box {
+        width: 80%;
+    min-height: 150%;
+}
+
+    .loadingPage .text {
+        top: 48.2%;
+        left: 30.8%;
+    }
+
     }
 
 @media (min-width: 769px) and (max-width: 1300px) {
@@ -239,6 +406,38 @@
         width: 50%;
         height: 560px;
     }
+
+    #Our-Chefs .container .item{
+    max-width: 230px;
+    margin: initial;
+}
+
+#Contact-Us .container {
+    width: 80%;
+}
+
+.popup[data-name='book-table'] >.box {
+        width: 60%;
+    min-height: 150%;
+}
+
+.loadingPage .empty p{
+    font-size:75px;
+}
+
+.loadingPage .text p{
+    font-size: 75px;
+}
+
+.loadingPage .circle{
+    width: 100px;
+    height: 100px;
+}
+
+    .loadingPage .text {
+        top: 47.4%;
+        left: 32.9%;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1300px) {
@@ -262,6 +461,46 @@
     #About-Us .container .content .box:nth-of-type(3) {
         transform: translate(17%, -29%);
     }
+
+    #Special-Dish .box-1 {
+        width: 50%;
+        height: 602px;
+    }
+
+    .popup[data-name="menu"] .box{
+        height: 100%;
 }
 
-@media (min-width: 1181px) and (max-width: 1300px) {}
+.popup[data-name='book-table'] >.box {
+        width: 55%;
+    min-height: 140%;
+}
+
+    .loadingPage .text {
+        top: 47.6%;
+        left: 36.2%;
+    }
+}
+
+@media (min-width: 1181px) and (max-width: 1300px) {
+
+    #Menu .container .pane.move [class*='part'] .item .box .row .col-lg-2{
+        width: 20%;
+        padding: 0;
+    }
+
+    .popup[data-name="menu"] .box{
+        height: 108%;
+    }
+
+    .popup[data-name="book-table"] > .box {
+        min-height: 139%;
+    }
+
+    
+.loadingPage .text {
+    top: 47.6%;
+    left: 38.8%;
+}
+
+}

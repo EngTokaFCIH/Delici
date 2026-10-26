@@ -271,8 +271,8 @@ function showMenu(typeOfMeal) {
         if (index < ((typeOfMeal.length) / 2)) {
             part[0].innerHTML += `
                             <div class="box">
-                                <div class="row column-gap-4 justify-content-center align-items-center flex-nowrap">
-                                <div class="col-lg-2">
+                                <div class="row column-gap-lg-4 column-gap-0 justify-content-center align-items-center flex-nowrap">
+                                <div class="col-lg-2 p-xl-0 d-flex align-items-center justify-content-center">
                                     <div class="br-img d-flex justify-content-center rounded-4 position-relative">
                                         <img src="./images/${meal.images[0]}" class="img-flui" alt="Break Fast">
                                         <div class="layout position-absolute">
@@ -281,10 +281,10 @@ function showMenu(typeOfMeal) {
                                     </div>
                                 </div>
                                 <div class="col-lg-10 content d-flex align-items-start justify-content-center flex-column" title="">
-                                    <div class="headline d-flex align-items-center">
-                                        <h3 class="name">${meal.name}</h3>
-                                        <div class="line-between"></div>
-                                        <h3 class="price">${meal.price}</h3>
+                                    <div class="headline d-flex flex-column row-gap-2 flex-sm-row row-gap-lg-0">
+                                        <h3 class="name pe-0 pe-sm-2">${meal.name}</h3>
+                                        <div class="line-between d-none d-sm-block"></div>
+                                        <h3 class="price ps-sm-2 ps-0">${meal.price}</h3>
                                     </div>
                                     <div class="description">
                                         <p>${meal.description.slice(0, 60)}</p>
@@ -296,8 +296,8 @@ function showMenu(typeOfMeal) {
         } else if (index > 2 && index < typeOfMeal.length) {
             part[1].innerHTML += `
                             <div class="box">
-                                <div class="row column-gap-4 justify-content-center align-items-center flex-nowrap">
-                                <div class="col-lg-2">
+                                <div class="row column-gap-lg-4 column-gap-0 justify-content-center align-items-center flex-nowrap">
+                                <div class="col-lg-2 p-xl-0 d-flex align-items-center justify-content-center">
                                     <div class="br-img d-flex justify-content-center rounded-4 position-relative">
                                         <img src="./images/${meal.images[0]}" class="img-flui" alt="Break Fast">
                                         <div class="layout position-absolute">
@@ -306,10 +306,10 @@ function showMenu(typeOfMeal) {
                                     </div>
                                 </div>
                                 <div class="col-lg-10 content d-flex align-items-start justify-content-center flex-column" title="">
-                                    <div class="headline d-flex align-items-center">
-                                        <h3 class="name">${meal.name}</h3>
-                                        <div class="line-between"></div>
-                                        <h3 class="price">${meal.price}</h3>
+                                    <div class="headline d-flex flex-column row-gap-2 flex-sm-row row-gap-lg-0">
+                                        <h3 class="name pe-0 pe-sm-2">${meal.name}</h3>
+                                        <div class="line-between d-none d-sm-block"></div>
+                                        <h3 class="price ps-sm-2 ps-0">${meal.price}</h3>
                                     </div>
                                     <div class="description">
                                         <p>${meal.description.slice(0, 60)}</p>

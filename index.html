@@ -397,8 +397,8 @@
         <h2 class="display-5">Delicious Menu</h2>
         <div class="container d-flex align-items-center justify-content-center flex-column row-gap-3">
             <div class="links w-100 py-4 d-flex align-items-center justify-content-center column-gap-4 mb-5">
-                <div class="overflow-auto">
-                    <div class="boxes column-gap-4 my-2 d-flex flex-nowrap overflow-x-auto">
+                <div class="overflow">
+                    <div class="boxes column-gap-4 my-2 d-flex flex-nowrap">
                     <a class="active text-decoration-none" href="#BreakFast"
                         onclick="changeActive('BreakFast' , this , event)">BreakFast</a>
                     <span></span>
@@ -420,7 +420,7 @@
                 <i class="fa-solid fa-xmark cancel-search d-none" onclick="cancelSearch(this)"></i>
             </div>
 
-            <div class="row w-100 flex-lg-nowrap pane move position-relative" id="BreakFast">
+            <div class="row w-100 flex-lg-nowrap flex-column flex-lg-row row-gap-4 row-gap-lg-0 column-gap-xl-5 column-gap-0 pane move position-relative" id="BreakFast">
                 <div class="col-lg-6 part part1">
                     <div class="item d-flex justify-content-center flex-column row-gap-5 w-100">
                     </div>
@@ -485,8 +485,8 @@
                 </div>
             </div>
             <h2 class="display-5 mb-4 text-light">Meet Our Chef</h2>
-            <div class="row w-100">
-                <div class="col-lg-4">
+            <div class="row w-100 row-gap-5 row-gap-md-0">
+                <div class="col-md-4">
                     <div class="item">
                         <div class="chef-img rounded-4 position-relative">
                             <img src="images/chef-1.jpg" alt="Willium Joe" class="img-fluid">
@@ -511,7 +511,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-md-4">
                     <div class="item">
                         <div class="chef-img rounded-4 position-relative">
                             <img src="images/chef-2.jpg" alt="Steave Den" class="img-fluid">
@@ -536,7 +536,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-md-4">
                     <div class="item">
                         <div class="chef-img rounded-4 position-relative">
                             <img src="images/chef-3.png" alt="Oliver Joe" class="img-fluid">
@@ -593,7 +593,7 @@
                     <span></span>
                 </div>
                 <i class="fa-solid fa-rotate-left d-none" data-name="reset" onclick="resetForm(this)"></i>
-                <div class="input flex-lg-row column-gap-lg-3 mb-4">
+                <div class="input flex-column row-gap-4 row-gap-lg-0 flex-md-row column-gap-md-3 mb-4">
                     <div
                         class="box position-relative d-flex align-items-center justify-content-center flex-column row-gap-2">
                         <input class="rounded-2 w-100" type="text" name="name" value placeholder="Name..."
@@ -618,7 +618,7 @@
 
     <!-- ===================================LOADING PAGE======================== -->
 
-    <!-- <div class="loadingPage">
+    <div class="loadingPage">
         <div class="circle"></div>
 
         <div class="empty">
@@ -638,7 +638,7 @@
             <P>C</P>
             <P>I</P>
         </div>
-    </div> -->
+    </div>
 
     <script src="js/bootstrap.js"></script>
     <script src="js/menu.js"></script>

@@ -225,21 +225,21 @@ popUpNavLinks.forEach(function (navLink) {
 
 showMenu(BreakFast);
 
-// window.onload = function(){
-//     loadingPage.classList.add('fixed');
-//     setTimeout(function(){
-//         loadingPage.classList.add('show');
-//     },0)
+window.onload = function(){
+    loadingPage.classList.add('fixed');
+    setTimeout(function(){
+        loadingPage.classList.add('show');
+    },0)
 
-//     let body = document.querySelector('body');
+    let body = document.querySelector('body');
 
-//     setTimeout(function(){
-//         loadingPage.classList.remove('show');
-//         loadingPage.classList.add('d-none')
-//         body.classList.add('scroll')
-//         loadingPage.classList.remove('fixed');
-//     },4000) 
-// }
+    setTimeout(function(){
+        loadingPage.classList.remove('show');
+        loadingPage.classList.add('d-none')
+        body.classList.add('scroll')
+        loadingPage.classList.remove('fixed');
+    },4000) 
+}
 
 
 

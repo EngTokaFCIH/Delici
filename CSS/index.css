@@ -90,11 +90,11 @@ nav.nav .burger span:nth-of-type(3){
 }
 
 body.scroll{
+    overflow-y: auto;
 }
 
 body{
     overflow-y: hidden;
-    overflow-y: auto;
     /* height: 6000px; */
 }
 
@@ -1371,6 +1371,7 @@ Header:hover .SC-carousel .indicators span.active::before{
 #Menu .container .pane [class*='part'] .item .box .headline{
     margin-bottom: 8px;
     width: 73%;
+    align-items: center;
 }
 
 #Menu .container .pane [class*='part'] .item .box .headline h3{
