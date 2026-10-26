@@ -1863,8 +1863,8 @@ Header:hover .SC-carousel .indicators span.active::before{
     align-items: center;
     justify-content: center;
     /* opacity: 0; */
-    top: 47.8%;
-    left: 38.8%;
+top: 47.6%;
+    left: initial;
     column-gap: 18px;
 }
 
