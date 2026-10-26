@@ -239,12 +239,6 @@
     width: 84px;
     height: 84px;
 }
-
-.loadingPage .text {
-        top: 48.2%;
-        left: 13.9%;
-    }
-
 }
 
 @media (min-width: 371px) and (max-width: 1300px) {
@@ -301,11 +295,6 @@
     width: 75%;
     text-align: center;
 }
-
-    .loadingPage .text {
-        top: 48.2%;
-        left: 21.9%;
-    }
 }
 
 @media (min-width: 577px) and (max-width: 1300px) {
@@ -355,12 +344,6 @@
         width: 80%;
     /* min-height: 150%; */
 }
-
-    .loadingPage .text {
-        top: 48.2%;
-        left: 30.6%
-    }
-
     }
 
 @media (min-width: 769px) and (max-width: 1300px) {
@@ -418,27 +401,16 @@
 
 .popup[data-name='book-table'] >.box {
         width: 60%;
-    /* min-height: 150%; */
 }
 
 .loadingPage .empty p{
     font-size:75px;
 }
 
-.loadingPage .text p{
-    font-size: 75px;
-}
-
 .loadingPage .circle{
     width: 100px;
     height: 100px;
 }
-
-    .loadingPage .text {
-        top: 47.6%;
-        left: 33%;
-    
-    }
 }
 
 @media (min-width: 992px) and (max-width: 1300px) {
@@ -468,19 +440,11 @@
         height: 602px;
     }
 
-    .popup[data-name="menu"] .box{
-        /* height: 100%; */
-}
-
 .popup[data-name='book-table'] >.box {
         width: 55%;
     /* min-height: 140%; */
 }
 
-    .loadingPage .text {
-        top: 47.6%;
-        left: 36.2%;
-    }
 }
 
 @media (min-width: 1181px) and (max-width: 1300px) {
@@ -493,15 +457,4 @@
     .popup[data-name="menu"] .box{
         height: 108%;
     }
-
-    .popup[data-name="book-table"] > .box {
-        /* min-height: 139%; */
-    }
-
-    
-.loadingPage .text {
-    top: 47.6%;
-    left: 38.8%;
-}
-
 }
