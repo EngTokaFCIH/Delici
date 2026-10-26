@@ -126,7 +126,7 @@ body{
     top: 0;
     left: -100%;
     width: 400px;
-    min-height: 100dvh;
+    min-height: max-content;
     display: block;
     background: var(--bg-color2) url("./../images/bg-nav.png");
     background-position: center;
@@ -248,7 +248,7 @@ body{
     left: 50%;
     transform: translateX(-50%);
     width: 45%;
-    min-height: 120%;
+    min-height: max-content;
     display: block;
     background: var(--bg-color2);
     background-position: center;
@@ -1174,7 +1174,6 @@ Header:hover .SC-carousel .indicators span.active::before{
 
 
 #Menu .container .links .boxes{
-    width: 50%;
     height: 28px;
     display: flex;
     align-items: center;
@@ -1437,7 +1436,7 @@ Header:hover .SC-carousel .indicators span.active::before{
     position: relative;
     margin: 50px auto;
     background-color: var(--bg-color-nav);
-    height: 100%;
+    min-height: max-content;
     width: 600px;
 }
 
