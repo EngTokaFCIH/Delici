@@ -398,13 +398,15 @@ function search() {
 
     if (result.length === 0) {
         noResult.classList.remove('d-none');
-        lineInMiddle.classList.add('d-none')
+        lineInMiddle.classList.add('d-none');
+        lineInMiddle.classList.remove('d-lg-block');
         parts.forEach(function (part) {
             part.classList.add('d-none')
         })
     } else {
         noResult.classList.add('d-none');
-        lineInMiddle.classList.remove('d-none')
+        lineInMiddle.classList.remove('d-none');
+        lineInMiddle.classList.add('d-lg-block');
         parts.forEach(function (part) {
             part.classList.remove('d-none')
         })
