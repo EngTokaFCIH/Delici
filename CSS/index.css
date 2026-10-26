@@ -1845,7 +1845,7 @@ Header:hover .SC-carousel .indicators span.active::before{
     animation-iteration-count: infinite;
 }
 
-.loadingPage .empty{
+.loadingPage .strokeText .empty{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1855,51 +1855,54 @@ Header:hover .SC-carousel .indicators span.active::before{
     column-gap: 18px;
 }
 
-.loadingPage  .text{
+.loadingPage .strokeText{
+    width: fit-content;
+}
+
+.loadingPage .strokeText  .text{
     position: absolute;
+    top: 0;
+    left: 0;
     color: #000;
     font-size:80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* opacity: 0; */
-top: 47.6%;
-    left: initial;
     column-gap: 18px;
 }
 
-.loadingPage  .text > *{
+.loadingPage .strokeText  .text > *{
     animation-name: letter-rotate;
     animation-timing-function: linear;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
 
-.loadingPage .text p:nth-of-type(1){
+.loadingPage .strokeText .text p:nth-of-type(1){
     animation-duration: 2s;
 }
 
-.loadingPage .text p:nth-of-type(2){
+.loadingPage .strokeText .text p:nth-of-type(2){
     animation-duration: 2s;
     animation-delay: 0.3s;
 }
 
-.loadingPage .text p:nth-of-type(3){
+.loadingPage .strokeText .text p:nth-of-type(3){
     animation-duration: 2s;
     animation-delay: .35s;
 }
 
-.loadingPage .text p:nth-of-type(4){
+.loadingPage .strokeText .text p:nth-of-type(4){
     animation-duration: 2s;
     animation-delay: .38s;
 }
 
-.loadingPage .text p:nth-of-type(5){
+.loadingPage .strokeText .text p:nth-of-type(5){
     animation-duration: 2s;
     animation-delay: 0.40s;
 }
 
-.loadingPage .text p:nth-of-type(6){
+.loadingPage .strokeText .text p:nth-of-type(6){
     animation-duration: 2s;
     animation-delay: 0.40s;
 }
