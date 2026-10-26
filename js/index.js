@@ -238,7 +238,7 @@ window.onload = function(){
         loadingPage.classList.add('d-none')
         body.classList.add('scroll')
         loadingPage.classList.remove('fixed');
-    },400000) 
+    },4000) 
 }
 
 
